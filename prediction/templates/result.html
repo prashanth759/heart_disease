@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}">
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p >The prediction result for the provided data is: <a class="highlight">{{ result }}</a></p>
+    <p>
+        <a href="/">Back to Home</a>
+    </p>
+</body>
+</html>
