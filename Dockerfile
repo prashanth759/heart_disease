@@ -1,6 +1,6 @@
-FROM python:3.11-alpine3.21
+FROM python:3.10.18-bullseye
 WORKDIR /code
-RUN adduser heart -D --home /code -s /bin/sh
+RUN useradd heart -d /code -s /bin/bash
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
